@@ -1,0 +1,96 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo's CSS */
+
+.appLogo{
+    position: absolute;
+    margin-top: 7vh;
+    margin-left: 10vh;
+    transform: scale(1.3);
+}
+
+/* Login.jsx */
+
+.Login{
+    display: grid;
+    grid-template-columns: 58% 42%;
+    height: 100vh;
+}
+
+.loginText{
+    font-family: 'DM Sans';
+    font-size: 38px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 29vh;
+}
+
+.loginTextTwo{
+    font-family: 'DM Sans';
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 1.5%;
+    text-align: center;
+}
+
+/* LoginGreen.jsx */
+
+.LoginGreen{
+    background-color: #7BAB42;
+    height: 100%;
+    width: 100%;
+}
+
+/* LoginImage.jsx */
+
+.LoginImage{
+    position: absolute;
+    width: 46%;
+    height: 61%;
+    margin-left: 47vw;
+    margin-top: 15vh;
+}
+
+/* EmailText.jsx */
+
+.textField{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.textField fieldset{
+    border: 0;
+}
+
+/* PasswordText.jsx */
+
+.passwordField{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.passwordField fieldset{
+    border: 0;
+}
+
+
+/* LoginButton.jsx */
+
+.logButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    height: 5%;
+}
+
+.regButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    height: 5%;
+}

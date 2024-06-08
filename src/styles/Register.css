@@ -3,6 +3,40 @@ body, html{
     padding: 0;
 }
 
+/* animation */
+@keyframes slideDownToUp{
+    from{
+        transform: translateY(5vh);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 27px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+@keyframes sparkle {
+    0% { 
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 /* Logo's CSS */
 
 .appLogo{
@@ -26,12 +60,14 @@ body, html{
     font-weight: 600;
     text-align: center;
     margin-top: 21.6vh;
+    animation: slideDownToUp 0.5s ease-in-out forwards;
 }
 
 .backToLogin{
     margin-top: 1.7%;
     text-align: center;
     font-family: 'DM Sans';
+    animation: slideDownToUp 1.5s ease-in-out forwards;
     /* unvisited link */
     a:link { 
         text-decoration: none;
@@ -68,6 +104,7 @@ body, html{
     justify-content: center;
     margin-top: 4%;
     gap: 1rem;
+    animation: slideDownToUp 0.7s ease-in-out forwards;
 }
 
 .textFieldReg fieldset{
@@ -80,6 +117,7 @@ body, html{
     display: flex;
     justify-content: center;
     margin-top: 2%;
+    animation: slideDownToUp 0.9s ease-in-out forwards;
 }
 
 .phoneNum fieldset{
@@ -92,6 +130,7 @@ body, html{
     justify-content: center;
     margin-top: 2%;
     gap: 1rem;
+    animation: slideDownToUp 1.1s ease-in-out forwards;
 }
 
 .userRole fieldset{
@@ -104,6 +143,7 @@ body, html{
     display: flex;
     justify-content: center;
     margin-top: 2%;
+    animation: slideDownToUp 1.3s ease-in-out forwards;
 }
 
 .passwordRegister fieldset{
@@ -117,15 +157,55 @@ body, html{
     justify-content: center;
     margin-top: 4%;
     height: 5%;
+    animation: slideDownToUp 1.5s ease-in-out forwards;
 }
 
 /* RegisterImage.jsx */
 
 .RegisterImage{
     position: absolute;
-    width: 46%;
-    height: 61%;
-    margin-left: 47.6vw;
-    margin-top: 21vh;
-    transform: scale(1.1);
+    width: 52%;
+    height: 71%;
+    margin-left: 45vw;
+    margin-top: 15vh;
+    animation: slideDownToUp 1.1s ease-in-out forwards;
+}
+
+.RegisterImage1{
+    position: absolute;
+    width: 52%;
+    height: 71%;
+    margin-left: 45vw;
+    margin-top: 15vh;
+    animation: sparkle 6s ease infinite;
+    animation-delay: 0s;
+}
+
+.RegisterImage2{
+    position: absolute;
+    width: 52%;
+    height: 71%;
+    margin-left: 45vw;
+    margin-top: 15vh;
+    animation: floating 3s ease-in-out infinite;
+}
+
+.RegisterImage3{
+    position: absolute;
+    width: 52%;
+    height: 71%;
+    margin-left: 45vw;
+    margin-top: 15vh;
+    animation: sparkle 5.8s ease infinite;
+    animation-delay: 1s;
+}
+
+.RegisterImage4{
+    position: absolute;
+    width: 52%;
+    height: 71%;
+    margin-left: 45vw;
+    margin-top: 15vh;
+    animation: sparkle 4.6s ease infinite;
+    animation-delay: 0.5s;
 }

@@ -203,7 +203,7 @@ function UserRole() {
             disabled={userRole !== 'Centra'}
             sx={{ bgcolor: '#EFEFEF', borderRadius: 10, width: 310, color: '#6A6A6A' }}
             InputLabelProps={{
-                style: { color: '#6A6A6A', top: "-0.5vh", "&.MuiInputLabel-shrink": { top: 0 } }
+                style: { color: '#6A6A6A', top: "-0.5vh", "&.MuiInputLabelShrink": { top: 0 } }
             }}
             // you need to play with it a little bit, 
             // but the key in my example for the label to fit and work good is that the top (before shrink) 
